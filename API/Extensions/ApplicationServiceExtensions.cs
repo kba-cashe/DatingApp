@@ -18,6 +18,8 @@ public static class ApplicationServiceExtensions
         // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
         services.AddOpenApi();
         services.AddScoped<ITokenService, TokenService>();
+        services.AddScoped<IUserRepository, UserRepository>();
+        services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
         return services;
     }
