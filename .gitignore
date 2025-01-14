@@ -485,3 +485,10 @@ $RECYCLE.BIN/
 API/appsettings.json
 client/ssl/localhost-key.pem
 client/ssl/localhost.pem
+.editorconfig
+.gitattributes
+.pnp.cjs
+.pnp.loader.mjs
+.vscode/settings.json
+yarn.lock
+.yarn/install-state.gz
