@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+<nav class="navbar navbar-expand-md fixed-top bg-primary">
     <div class="container">
       <a class="navbar-brand" routerLinkActive="active" routerLink="/">Dating App</a>
 
@@ -23,7 +23,7 @@
 
       @if (accountService.currentUser()) {
         <div class="dropdown" dropdown>
-          <a class="dropdown-toggle text-light text-decoration-none" dropdownToggle>
+          <a class="dropdown-toggle text-dark text-decoration-none" dropdownToggle>
             Welcome {{ accountService.currentUser()?.username | titlecase }}
           </a>
           <div class="dropdown-menu" *dropdownMenu>
