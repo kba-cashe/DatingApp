@@ -3,7 +3,11 @@
         @if (messagesService.messageThread().length === 0) {
             <p>No messages</p>
         } @else {
-            <ul class="chat">
+            <ul 
+                class="chat"
+                #scrollMe
+                style="overflow-y: scroll; max-height: 70vh; scroll-behavior: smooth;"
+            >
                 @for (message of messagesService.messageThread(); track message.id) {
                     <li>
                         <div>
